@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professional Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h2>My Portfolio</h2>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#profile">Profile</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#academic">Academics</a>
+    <a href="#cv">CV</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="theme-btn" onclick="toggleTheme()">Theme</button>
+</header>
+
+<div class="container">
+
+<section id="home">
+  <h2>Welcome to my Portfolio</h2>
+</section>
+
+<section id="profile" class="profile">
+  <div class="profile-text">
+    <h1>ABDUL BASIT</h1>
+    <h3>Registration No: 5126039</h3>
+    <p>
+      Software Engineering 1st semester student at UET Peshawar Abbottabad campus.
+      I enjoy building logical, efficient programs and continuously improving my
+      problem-solving skills. I’m currently focused on mastering C programming
+      and core computer science concepts.
+    </p>
+  </div>
+  <div class="profile-img">
+    <img src="my pic.jpg" alt="Profile Picture">
+  </div>
+</section>
+
+<section id="skills">
+  <h2>My Skills</h2>
+  <ul>
+    <li>C / C++</li>
+    <li>HTML</li>
+    <li>CSS (Intermediate)</li>
+    <li>JavaScript (Beginner)</li>
+    <li>Database Designing (Beginner)</li>
+  </ul>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <h4>Conversion of Decimal to Binary (C)</h4>
+  <p>Converts decimal numbers into binary.</p>
+  <h4>Portfolio Website</h4>
+  <p>Personal portfolio website using HTML & CSS.</p>
+</section>
+
+<!--  GALLERY SECTION -->
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery-grid">
+    <img src="g1 pic.jpg" alt="Gallery Image">
+    <img src="g2 pic.jpg" alt="Gallery Image">
+    <img src="g3 pic.jpg" alt="Gallery Image">
+    <img src="g4 pic.jpg" alt="Gallery Image">
+  </div>
+</section>
+
+<section id="academic">
+  <h2>Academic Background</h2>
+
+  <button class="filter-btn" onclick="filterEdu('all')">Show All</button>
+  <button class="filter-btn" onclick="filterEdu('Primary')">Primary</button>
+  <button class="filter-btn" onclick="filterEdu('Secondary')">Secondary</button>
+  <button class="filter-btn" onclick="filterEdu('University')">University</button>
+
+  <table id="eduTable">
+    <tr>
+      <th>Level</th>
+      <th>Institute</th>
+      <th>Year</th>
+    </tr>
+    <tr>
+      <td>Primary</td><td>Shaheen Children Academy</td><td>2015</td>
+    </tr>
+    <tr>
+      <td>Secondary</td><td>Oxford Science School</td><td>2020</td>
+    </tr>
+    <tr>
+      <td>University</td><td>UET Peshawar (Abbottabad Campus)</td><td>2025</td>
+    </tr>
+  </table>
+</section>
+
+<section id="cv">
+  <h2>Curriculum Vitae</h2>
+  <button onclick="toggleCV()">View CV</button>
+  <iframe id="cvFrame" src="my cv.pdf"></iframe>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form onsubmit="return validateForm()">
+    <input id="name" placeholder="Your Name">
+    <input id="email" placeholder="Email">
+    <textarea id="message" placeholder="Message"></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+</div>
+
+<footer>
+  <h3>Connect With Me</h3>
+  <div class="social-icons">
+    <a href="https://www.facebook.com/share/1D1aDHXoKR/" target="_blank">
+      <i class="fab fa-facebook"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/abdul-basit-685762393" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/abdulbasitacademic-tech" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
